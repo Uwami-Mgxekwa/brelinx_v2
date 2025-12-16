@@ -355,6 +355,7 @@ progress {
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
