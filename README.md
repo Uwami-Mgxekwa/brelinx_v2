@@ -55,9 +55,11 @@ This website has been transformed from an interior design template to a comprehe
 ## Customizations Made
 
 ### Color Scheme
-- Primary color changed from #DFB163 to #00ff41 (neon green)
-- Added neon glow effects for buttons and interactive elements
-- Custom scrollbar with green gradient
+- Primary color changed from #DFB163 to #2d8a5f (Brelinx green)
+- Accent color: #1fb574 (Brelinx accent green)
+- Added professional gradient effects for buttons and interactive elements
+- Custom scrollbar with Brelinx green gradient
+- Consistent with original Brelinx brand identity
 
 ### Content Updates
 - All interior design content replaced with IT services content
