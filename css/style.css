@@ -19,7 +19,10 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #00ff41;
+  --primary: #2d8a5f;
+  --primary-dark: #236b4a;
+  --primary-light: #3da36f;
+  --accent-color: #1fb574;
   --secondary: #252531;
   --success: #28a745;
   --info: #17a2b8;
@@ -27,6 +30,16 @@
   --danger: #dc3545;
   --light: #F3F6FF;
   --dark: #181818;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --border-color: #dee2e6;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -9671,69 +9684,70 @@ h6 {
   list-style-type: none;
 }
 
-/* Custom IT Theme Styles with Neon Green Accents */
-.text-neon-green {
-  color: #00ff41 !important;
+/* Custom IT Theme Styles with Brelinx Green Accents */
+.text-brelinx-green {
+  color: var(--primary) !important;
 }
 
-.bg-neon-green {
-  background-color: #00ff41 !important;
+.bg-brelinx-green {
+  background-color: var(--primary) !important;
 }
 
-/* Neon glow effect for buttons */
+/* Professional gradient buttons */
 .btn-primary {
-  background: linear-gradient(45deg, #00ff41, #00cc33);
+  background: linear-gradient(135deg, var(--primary), var(--accent-color));
   border: none;
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
-  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  font-weight: 600;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(45deg, #00cc33, #00ff41);
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 
-/* Neon accent for navbar brand */
+/* Brelinx accent for navbar brand */
 .navbar-brand h1 span:last-child {
-  color: #00ff41 !important;
-  text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+  color: var(--primary) !important;
+  font-weight: 900;
 }
 
-/* IT-themed icons with neon glow */
+/* IT-themed icons with professional styling */
 .service-card i, .fas, .fab {
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 .service-card:hover i {
-  color: #00ff41 !important;
-  text-shadow: 0 0 15px rgba(0, 255, 65, 0.6);
+  color: var(--primary) !important;
+  transform: scale(1.1);
 }
 
 /* Portfolio hover effects */
 .portfolio-item:hover .portfolio-text {
-  background: linear-gradient(135deg, rgba(0, 255, 65, 0.9), rgba(37, 37, 49, 0.9)) !important;
+  background: linear-gradient(135deg, rgba(45, 138, 95, 0.95), rgba(37, 37, 49, 0.9)) !important;
 }
 
-/* Custom scrollbar with neon green */
+/* Custom scrollbar with Brelinx green */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--bg-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #00ff41, #00cc33);
+  background: linear-gradient(135deg, var(--primary), var(--accent-color));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #00cc33, #00ff41);
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
 }
 
-/* Animated background for hero section */
+/* Professional background for hero section */
 .carousel-item::before {
   content: '';
   position: absolute;
@@ -9741,7 +9755,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(0, 255, 65, 0.1), rgba(0, 204, 51, 0.1));
+  background: linear-gradient(45deg, rgba(45, 138, 95, 0.1), rgba(31, 181, 116, 0.1));
   z-index: 1;
 }
 
@@ -9749,30 +9763,32 @@ h6 {
   z-index: 2;
 }
 
-/* Glowing border for cards */
+/* Professional border for cards */
 .card, .service-card, .bg-light {
-  border: 1px solid rgba(0, 255, 65, 0.2);
-  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
 .card:hover, .service-card:hover {
-  border-color: rgba(0, 255, 65, 0.5);
-  box-shadow: 0 5px 20px rgba(0, 255, 65, 0.1);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
 }
 
 /* Update existing primary color references */
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next {
-  color: #00ff41;
-  border: 1px solid #00ff41;
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-  background: #00ff41;
+  background: var(--primary);
 }
 
-/* Neon text effect for headings */
+/* Professional accent line for headings */
 .section-title {
   position: relative;
 }
@@ -9781,48 +9797,105 @@ h6 {
   content: '';
   position: absolute;
   bottom: -5px;
-  left: 0;
-  width: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
   height: 3px;
-  background: linear-gradient(45deg, #00ff41, #00cc33);
-  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  background: linear-gradient(135deg, var(--primary), var(--accent-color));
+  border-radius: 2px;
 }
 
-/* Responsive neon effects */
-@media (max-width: 768px) {
-  .btn-primary {
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
-  }
-  
-  .btn-primary:hover {
-    box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
-  }
+/* Service icons with gradient background */
+.d-flex.align-items-center.mb-4 i {
+  background: linear-gradient(135deg, var(--primary), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-/* WhatsApp floating button style */
+/* Enhanced hover effects for navigation */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+/* Professional contact form styling */
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(45, 138, 95, 0.25);
+}
+
+/* WhatsApp floating button with Brelinx styling */
 .whatsapp-float {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 30px;
   background-color: #25d366;
   color: #FFF;
-  border-radius: 50px;
+  border-radius: 50%;
   text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+  font-size: 2rem;
+  box-shadow: var(--shadow-lg);
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: var(--transition);
+  text-decoration: none;
 }
 
 .whatsapp-float:hover {
-  background-color: #128c7e;
+  background-color: #20ba5a;
   color: #FFF;
   text-decoration: none;
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+}
+
+/* Professional stats styling */
+.display-3 {
+  background: linear-gradient(135deg, var(--primary), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Enhanced carousel controls */
+.carousel-control-prev .btn,
+.carousel-control-next .btn {
+  background: linear-gradient(135deg, var(--primary), var(--accent-color)) !important;
+  border: none;
+}
+
+/* Professional testimonial styling */
+.testimonial-1 img,
+.testimonial-2 img {
+  border: 3px solid var(--primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .section-title::after {
+    width: 40px;
+  }
 }
