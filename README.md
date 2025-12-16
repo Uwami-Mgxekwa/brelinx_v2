@@ -16,10 +16,10 @@ This website has been transformed from an interior design template to a comprehe
 - **Desktop Applications**: Custom desktop software solutions
 
 ### Design Features
-- **Neon Green Theme**: Modern neon green accents (#00ff41) throughout the site
+- **Brelinx Green Theme**: Professional green color scheme (#2d8a5f primary, #1fb574 accent) matching the original Brelinx brand
 - **Responsive Design**: Mobile-friendly layout that works on all devices
 - **WhatsApp Integration**: Direct contact via WhatsApp for instant communication
-- **Smooth Animations**: CSS transitions and hover effects
+- **Smooth Animations**: CSS transitions and hover effects with professional styling
 - **Professional Layout**: Clean, modern design suitable for IT business
 
 ### Contact Information
