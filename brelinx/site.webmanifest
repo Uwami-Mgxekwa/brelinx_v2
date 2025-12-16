@@ -1,0 +1,94 @@
+{
+  "name": "Brelinx - IT Services & Software Solutions",
+  "short_name": "Brelinx",
+  "description": "Innovative IT solutions for your business growth. Software development, mobile apps, programming coaching, and assignment help.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2d8a5f",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/logo.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "apple-touch-icon"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity",
+    "education",
+    "technology"
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with Brelinx",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/assets/logo.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "View our IT services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "/assets/logo.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Coaching",
+      "short_name": "Coaching",
+      "description": "Programming coaching sessions",
+      "url": "/#education",
+      "icons": [
+        {
+          "src": "/assets/logo.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Read our latest insights",
+      "url": "/#blog",
+      "icons": [
+        {
+          "src": "/assets/logo.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "lang": "en-US",
+  "dir": "ltr"
+}
